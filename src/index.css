@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@100..900&family=Modak&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+@theme {
+  --font-modak: "Modak", system-ui;
+  --font-sans: "DM Sans", sans-serif;
+  
+  --color-brand-orange-light: #ff9776;
+  --color-brand-orange: #ff9376;
+  --color-brand-rose: #d85864;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Card panel - light mode: white with subtle border */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 24px -4px rgba(0, 0, 0, 0.06),
+              0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+/* Card panel - dark mode: dark bg with subtle white border */
+.dark .glass-panel {
+  background: rgba(14, 14, 14, 0.85);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 32px -4px rgba(0, 0, 0, 0.5),
+              0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Premium Layout Customizations */
+.grid-mesh {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(120, 119, 198, 0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(120, 119, 198, 0.03) 1px, transparent 1px);
+}
+
+.dark .grid-mesh {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+}
