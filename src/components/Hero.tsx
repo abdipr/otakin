@@ -56,10 +56,10 @@ export default function Hero() {
         className="font-modak text-4xl md:text-5xl lg:text-6xl tracking-normal leading-[1.1] max-w-3xl select-none"
         id="hero-header-h1"
       >
-        <span className="hero-title-line block opacity-0 translate-y-8 bg-linear-to-r dark:from-white dark:via-neutral-100 dark:to-neutral-300 from-[#1a1918] via-[#332f2b] to-[#4c3e34] bg-clip-text text-transparent">
+        <span className="hero-title-line block pb-4 -mb-4 opacity-0 translate-y-8 bg-linear-to-r dark:from-white dark:via-neutral-100 dark:to-neutral-300 from-[#1a1918] via-[#332f2b] to-[#4c3e34] bg-clip-text text-transparent">
           Belajar Cerdas
         </span>
-        <span className="hero-title-line block opacity-0 translate-y-8 bg-linear-to-r from-brand-orange-light via-brand-orange to-brand-rose bg-clip-text text-transparent">
+        <span className="hero-title-line block pb-4 -mb-4 opacity-0 translate-y-8 bg-linear-to-r from-brand-orange-light via-brand-orange to-brand-rose bg-clip-text text-transparent">
           untuk UTBK.
         </span>
       </h1>
